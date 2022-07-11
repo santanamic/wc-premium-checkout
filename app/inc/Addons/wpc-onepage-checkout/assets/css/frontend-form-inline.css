@@ -1,0 +1,27 @@
+/**************************
+*                         *
+*       INLINE FORM       *
+*                         *
+***************************/
+
+body.inline-form .woocommerce form .form-row-wide, body.inline-form .woocommerce-page form .form-row-wide,
+body.inline-form .woocommerce form .form-row-first, body.inline-form .woocommerce form .form-row-last, body.inline-form .woocommerce-page form .form-row-first, body.inline-form .woocommerce-page form .form-row-last  {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    float: none;
+    margin: 16px 0;
+}
+
+body.inline-form .woocommerce form .form-row label:first-child, body.inline-form .woocommerce-page form .form-row label:first-child {
+    width: 33%;
+}
+
+body.inline-form .woocommerce form .form-row label + * {
+    flex-grow: 1;
+    width: 0 !important;
+}
+
+body.inline-form .woocommerce .content-box .create-account {
+    margin: 0;
+}

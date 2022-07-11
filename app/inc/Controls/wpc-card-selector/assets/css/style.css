@@ -1,0 +1,115 @@
+.wpc-control-card {
+    position: relative;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 1px -1px rgba(0,0,0,.1);
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.wpc-control-card.active {
+    border: solid 1px #544d4d;
+}
+
+.wpc-control-card {
+    display: inline-grid;
+}
+
+.wpc-control-card-screenshot {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+	line-height: 0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: opacity .2s ease-in-out;
+    transition: opacity .2s ease-in-out;
+}
+
+.wpc-control-card .wpc-control-card-screenshot.active img,
+.wpc-control-card:focus .wpc-control-card-screenshot img, 
+.wpc-control-card:hover .wpc-control-card-screenshot img {
+    opacity: .4;
+}
+
+.wpc-control-card-more-details {
+    opacity: 0;
+    display: inline-flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    height: calc( 100% - 45px );
+    width: 100%;
+    background: rgba(0,0,0,.7);
+    color: #fff;
+    font-size: 0.896em;
+    text-shadow: 0 1px 0 rgba(0,0,0,.6);
+    -webkit-font-smoothing: antialiased;
+    font-weight: 600;
+    padding: 0.2em 0 0.28em;
+    text-align: center;
+    transition: opacity .1s ease-in-out;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    line-height: 1.42em;
+}
+
+.wpc-control-card .wpc-control-card-more-details.active, 
+.wpc-control-card:focus .wpc-control-card-more-details, 
+.wpc-control-card:hover .wpc-control-card-more-details {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    opacity: 1;
+}
+
+.wpc-control-card-name {
+    font-size: 1.05em !important;
+    font-weight: 600;
+    margin: 0;
+    padding: 1em 0.4em 1em 1em;
+    -webkit-box-shadow: inset 0 1px 0 rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 0 rgba(0,0,0,.1);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /* background: #fff; */
+    /* background: rgb(249, 249, 249); */
+    width: 45%;
+}
+
+.wpc-control-card-actions {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    /*! opacity: 0; */
+    -webkit-transition: opacity .1s ease-in-out;
+    transition: opacity .1s ease-in-out;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    padding: 9px 10px 0;
+    background: rgb(245, 245, 245);
+    border-left: 1px solid rgba(0,0,0,.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wpc-container-card {
+    display: grid;
+}
+
+.wpc-control-card:hover .wpc-control-card-screenshot img {
+    /* transform: scale(1.25); */
+    /* transition: transform 1200ms; */
+}
+
+.wpc-control-card-bottom {
+    /* height: 45px; */
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 99999;
+    background: rgb(249, 249, 249);
+}

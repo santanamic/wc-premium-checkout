@@ -1,0 +1,336 @@
+ol.fields-content, ol.field-group-content, li.item-field {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ol.fields-content {
+    background: white;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+	max-width: 258px;
+    user-select: none;
+}
+
+ol.fields-content li.field-group {
+    margin: 0;
+    overflow: hidden;
+    float: left;
+    width: 100%;
+    background: #f1f1f1;
+}
+
+ol.fields-content li.field-group .field-group-label {
+    background: #ffff;
+    padding: 0.7em 7px;
+    border-left: solid 3px #ffffffa1;
+	overflow: hidden;
+    cursor: pointer;
+}
+
+ol.fields-content li.field-group.active .field-group-label {
+    border-color: #000000a1;
+}
+
+ol.fields-content li.field-group.active .on-add {
+    background: #5e5e5e;
+    color: #fff;
+}
+
+ol.fields-content li.field-group .field-group-label .field-group-title {
+    float: left;
+}
+
+ol.fields-content li.field-group .field-group-label .field-group-insert, ol.fields-content .item-field .item-field-label .field-group-toggle {
+    float: right;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+ol.fields-content li.field-group .field-selector {
+    background: #f1f1f1;
+    padding: 12px 0 0 12px;
+    position: relative;
+    text-align: right;
+    display: none;
+}
+
+ol.fields-content li.field-group.active[data-add-fields="true"] .field-selector {
+    display: block;
+	z-index: 0;
+}
+
+ol.fields-content li.field-group.active .field-selector .on-add {
+    position: absolute;
+    width: 17px;
+    top: 15px;
+    left: 11px;
+    float: left;
+    text-align: center;
+    background: #5e5e5e;
+    border-radius: 100%;
+    font-size: 11px;
+    line-height: 1.54;
+    text-align: center;
+    z-index: 999;
+}
+
+ol.fields-content li.field-group .field-group-label .field-group-insert .on-add {
+    font-size: 19px;
+    position: relative;
+    line-height: 1;
+    display: block;
+    width: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #00000045;
+}
+
+ol.fields-content li.field-group.active .field-selector .select2.WPC_select2-container.WPC_select2-container--default {
+    width: 90% !important;
+}
+
+ol.fields-content li.field-group.active .field-selector .WPC_select2-container--default .WPC_select2-selection--multiple {
+    border-radius: 0 !important;
+    min-height: 15px !important;
+    line-height: 1;
+}
+
+ol.fields-content li.field-group.active .field-selector .WPC_select2-container .WPC_select2-search--inline .WPC_select2-search__field {
+	margin-top: 0;
+    padding: 2px 0;
+}
+
+ol.fields-content li.field-group.active .field-selector .WPC_select2-container--default .WPC_select2-selection--multiple .WPC_select2-selection__rendered li {
+    margin-bottom: 0;
+}
+
+ol.fields-content li.field-group.active .field-selector .WPC_select2-container .WPC_select2-search--inline .WPC_select2-search--field {
+    font-size: 80% !important;
+}
+
+ol.fields-content li.field-group.active .field-selector .WPC_select2-container .WPC_select2-selection__rendered .WPC_select2-selection__choice {
+    display: none;
+}
+
+
+ol.field-group-content {
+    padding: 12px 0 12px 12px;
+    background: #f1f1f1;
+}
+
+ol.field-group-content .item-field:last-child {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+ol.field-group-content .placeholder {
+    position: relative;
+    border: 1px dashed #b4b9be;
+    width: 100%;
+    height: 30px;
+	cursor: grab;
+}
+
+
+ol.fields-content {
+    background: white;
+    /* border: 1px solid #e5e5e5; */
+    /* box-shadow: 0 1px 1px rgba(0,0,0,.04); */
+    max-width: 258px;
+}
+
+ol.fields-content .item-field {
+    background: white;
+    border: 1px solid #e5e5e5;
+    border-bottom: 0;
+    cursor: move;
+}
+ol.fields-content .field-group[data-move-fields="false"] .item-field {
+    cursor: default;
+}
+
+ol.fields-content .item-field.active {
+    border: 1px solid #000;
+    padding-bottom: 1px;
+}
+
+ol.fields-content .item-field .item-field-label {
+    position: relative;
+    overflow: hidden;
+    padding: 7px;
+}
+
+ol.fields-content .item-field .item-field-label .field-title {
+    float: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 85%;
+}
+
+ol.fields-content .item-field .item-field-label .field-group-toggle {
+    font-size: 10px;
+    line-height: 2;
+    cursor: default;
+}
+
+ol.fields-content .item-field .item-field-label .field-group-toggle .open {
+    display: none;
+}
+
+ol.fields-content .item-field.active .item-field-label .field-group-toggle .close {
+    display: none;
+}
+
+ol.fields-content .item-field.active .item-field-label .field-group-toggle .open {
+    display: block;
+}
+
+ol.fields-content .item-field .item-field-content {
+    display: none;
+}
+
+ol.fields-content .item-field.active .item-field-content {
+    min-height: 250px;
+    border-top: solid 1px #f1f1f1;
+    background: #f1f1f1;
+    display: block;
+    padding: 12px;
+}
+
+ol.fields-content .item-field .field-delete {
+    display: none;
+}
+
+ol.fields-content .item-field.active[data-enable-delete="true"] .field-delete {
+    display: block;
+}
+
+ol.fields-content .arrangement-field {
+    margin-bottom: 10px;
+}
+
+ol.fields-content li.field-group .group-delete {
+	display: none;
+	margin: 0 0 12px;
+	overflow: hidden;
+	text-align: right;
+}
+
+ol.fields-content li.field-group textarea.field-group-title,
+ol.fields-content .item-field .item-field-label textarea.field-title {
+    width: auto;
+    height: 20px;
+    background: transparent;
+    border: transparent;
+    resize: none;
+    outline: navajowhite;
+    box-shadow: none;
+	line-height: 1;
+    overflow: hidden;
+	white-space: nowrap;
+    pointer-events: none;
+    user-select: none;
+}
+
+ol.fields-content li.field-group.active[data-custom-group="true"] textarea.field-group-title, 
+ol.fields-content .item-field.active .item-field-label textarea.field-title {
+    pointer-events: all;
+    user-select: all;
+    border: dotted 1px transparent;
+}
+
+ol.fields-content li.field-group.active[data-custom-group="true"] textarea.field-group-title, 
+ol.fields-content .item-field.active .item-field-label textarea.field-title {
+    border-color: #000;
+}
+
+ol.fields-content .group-add {
+    display: initial;
+    margin: 0 0 12px;
+    overflow: hidden;
+}
+
+ol.fields-content .group-add {
+    float: left;
+    margin: 20px 0 10px 0;
+}
+
+
+ol.fields-content li.field-group.active[data-enable-delete="true"] .group-delete {
+	display: block;
+}
+
+.WPC_select2-container--open .WPC_select2-dropdown--above, .WPC_select2-dropdown {
+    z-index: 999999 !important;
+}
+
+.field-disabled {
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+.field-list + span.select2.WPC_select2-container + span.select2.WPC_select2-container {
+    display: none;
+}
+
+ul.option-group {
+    position: relative;
+}
+
+ul.option-group.disabled {
+    user-select: none;
+    pointer-events: none;
+    overflow: hidden;
+    opacity: 0.4;
+}
+
+ul.option-group.disabled::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 9999;
+}
+
+/** options repeat input **/
+ul.option-group li {
+    display: grid;
+    grid-template-columns: 40% 40% 10%;
+    column-gap: 5%;
+}
+
+ul.option-group li  input, a {
+    display: inline-flex;
+    flex: 1;
+    height: 23px;
+    border: solid 1px #dddddd;
+	outline: none !important;
+}
+
+ul.option-group li button {
+    color: #ffffff;
+    padding: 0px 4px;
+    border-radius: 3px;
+    font-size: 14px;
+    display: inline-grid;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+ul.option-group li .add {
+    background-color: #00A0D2;
+    border: 1px solid #0073AA;
+}
+
+ul.option-group li .remove {
+    background-color: #ff6666;
+    border: 1px solid #ff4c4c;
+    font-size: 11px;
+}

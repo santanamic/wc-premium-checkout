@@ -1,0 +1,6 @@
+.repeater-field-step_field_group, 
+.repeater-field-step_field_group_content, 
+.repeater-field-step_content_shortcode, 
+.repeater-field-step_content_text {
+    display: none;
+}
